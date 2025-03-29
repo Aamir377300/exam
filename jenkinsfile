@@ -9,7 +9,7 @@ pipeline{
     stages{
 
         stage('checkout'){
-            git url 'https://github.com/Aamir377300/exam.git',
+            git url 'https://github.com/Aamir377300/exam.git'
                 branch 'main'
         }
 
