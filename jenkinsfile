@@ -8,11 +8,9 @@ pipeline{
 
     stages{
 
-        
-
-        stage('Build'){
+        stage('dependencies'){
             steps{
-                sh 'npm run build'
+                sh 'npm install'
             }
         }
 
@@ -22,11 +20,15 @@ pipeline{
             }
         }
 
-        stage('dependencies'){
+        stage('Build'){
             steps{
-                sh 'npm install'
+                sh 'npm run build'
             }
         }
+
+        
+
+        
 
         
 
