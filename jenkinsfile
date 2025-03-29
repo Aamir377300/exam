@@ -3,8 +3,7 @@ pipeline{
     agent any
 
     tools{
-            npm install
-            npm run build
+        node 'NodeJS 23'
     }
 
     stages{
