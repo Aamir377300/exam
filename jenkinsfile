@@ -3,7 +3,8 @@ pipeline{
     agent any
 
     tools{
-        npm 'npm'
+            npm install
+            npm run build
     }
 
     stages{
