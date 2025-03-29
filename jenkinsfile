@@ -3,7 +3,7 @@ pipeline{
     agent any
 
     tools{
-        nodeJS 'NodeJS 23'
+        nodejs 'Nodejs'
     }
 
     stages{
