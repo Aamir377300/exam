@@ -7,6 +7,13 @@ pipeline{
     }
 
     stages{
+
+        stage('checkout'){
+            git url 'https://github.com/Aamir377300/exam.git',
+                branch 'main'
+        }
+
+
         stage('dependencies'){
             steps{
                 sh 'npm install'
