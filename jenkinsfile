@@ -10,11 +10,11 @@ pipeline{
 
         stage('checkout'){
             steps{
-            git url 'https://github.com/Aamir377300/exam.git'
-                branch 'main'
+            git branch 'main'
+             url 'https://github.com/Aamir377300/exam.git'
+                
             }
         }
-
 
         stage('dependencies'){
             steps{
