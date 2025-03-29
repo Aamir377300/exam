@@ -8,19 +8,7 @@ pipeline{
 
     stages{
 
-        stage('checkout'){
-            steps{
-            git branch 'main'
-             url 'https://github.com/Aamir377300/exam.git'
-                
-            }
-        }
-
-        stage('dependencies'){
-            steps{
-                sh 'npm install'
-            }
-        }
+        
 
         stage('Build'){
             steps{
@@ -33,6 +21,14 @@ pipeline{
                 sh 'npm test || echo "No tests defined"'
             }
         }
+
+        stage('dependencies'){
+            steps{
+                sh 'npm install'
+            }
+        }
+
+        
 
         
     }
